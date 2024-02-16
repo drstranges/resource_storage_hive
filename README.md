@@ -2,7 +2,7 @@
 [![pub package](https://img.shields.io/pub/v/resource_storage_hive.svg)](https://pub.dev/packages/resource_storage_hive)
 
 Simple implementation of persistent resource storage for [cached_resource](https://pub.dev/packages/cached_resource) package,
-based on [hive][https://pub.dev/packages/hive] that stores a value as a JSON string.
+based on [hive](https://pub.dev/packages/hive) that stores a value as a JSON string.
 
 ## Components
 
