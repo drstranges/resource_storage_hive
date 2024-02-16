@@ -1,6 +1,6 @@
 name: resource_storage_hive
 description: "Implementation of [ResourceStorage] for [cached_resource](https://pub.dev/packages/cached_resource) package, based on Hive and json converter."
-version: 1.0.0
+version: 1.0.0+1
 homepage: https://github.com/drstranges/resource_storage_hive
 repository: https://github.com/drstranges/resource_storage_hive
 issue_tracker: https://github.com/drstranges/resource_storage_hive/issues
