@@ -22,7 +22,7 @@ class HiveResourceStorageProvider implements ResourceStorageProvider {
     StorageDecoder<V>? decode,
     StorageExecutor? executor,
     TimestampProvider? timestampProvider,
-    Logger? logger,
+    ResourceLogger? logger,
   }) {
     return HiveResourceStorage(
       storageName: storageName,
@@ -57,7 +57,7 @@ class HiveResourceStorage<K, V> implements ResourceStorage<K, V> {
     required StorageDecoder<V> decode,
     StorageExecutor executor = syncStorageExecutor,
     TimestampProvider timestampProvider = const TimestampProvider(),
-    Logger? logger,
+    ResourceLogger? logger,
   })  : _logger = logger,
         _timestampProvider = timestampProvider,
         _storageAdapter = JsonStorageAdapter<V>(
@@ -67,7 +67,7 @@ class HiveResourceStorage<K, V> implements ResourceStorage<K, V> {
         );
 
   static final _lock = Lock();
-  final Logger? _logger;
+  final ResourceLogger? _logger;
   final String storageName;
   final JsonStorageAdapter<V> _storageAdapter;
 
